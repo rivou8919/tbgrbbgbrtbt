@@ -2509,155 +2509,125 @@ CamShake:Stop()
         return "Remaining " .. 10 - v228 .. " training sessions."
     end
 
-spawn(function() 
-    repeat
-        task.wait()
-    until game:IsLoaded()
-    repeat
-        task.wait()
-    until game.Players
-    repeat
-        task.wait()
-    until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
-    wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>Sau Vài ngày chìm nghỉm<Color=/>"):Display()
-    wait(.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>Thì Sla Hub đã trở lại!!!!!<Color=/>"):Display()
-    wait(.14)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Hãy sử dụng Fluxus để có trải nghiệm tốt!!<Color=/>"):Display()
-    wait(.24)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Tham gia disocrd để cập nhật thông tin mới nhất nhé<Color=/>"):Display()
-    wait(.29)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Channel : LMNGAMING <Color=/>"):Display()
-    wait(.36)
-end)
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Sla Hub", HidePremium = false, IntroText = "@Tsuoscripts Library", SaveConfig = true, ConfigFolder = "Sla Hub"})
+local Window = OrionLib:MakeWindow({Name = "Sla Hub", HidePremium = false, IntroText = "", SaveConfig = true, ConfigFolder = "Sla Hub"})
 
 OrionLib:MakeNotification({
 	Name = "Sla Hub",
 	Content = "Choose Teams Bro?",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://119980140458596",
 	Time = 7
 })
 
 OrionLib:MakeNotification({
 	Name = "Sla Hub",
-	Content = "Sla Hub Not Skidder, Please don't says",
-	Image = "rbxassetid://4483345998",
+	Content = "Sla Hub",
+	Image = "rbxassetid://119980140458596",
 	Time = 25
 })
 
 OrionLib:MakeNotification({
     Name = "Sla Hub",
     Content = "Please Wait loading script...,Do not enable any function",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://119980140458596",
     Time = 5
 })
 
 -------------Tab-----------------------
 
 local W = Window:MakeTab({
-    Name = "👋 Welcome",
-    Icon = "rbxassetid://4483345998",
+    Name = "Welcome",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local M = Window:MakeTab({
-    Name = "🏠 General",
-    Icon = "rbxassetid://4483345998",
+    Name = "General",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local ST = Window:MakeTab({
-    Name = "🛠️ Setting",
-    Icon = "rbxassetid://4483345998",
+    Name = "Setting",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local IQ = Window:MakeTab({
-    Name = "⚔️ Item & Quest",
-    Icon = "rbxassetid://4483345998",
+    Name = "Item & Quest",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local S = Window:MakeTab({
-    Name = "📊 Stats",
-    Icon = "rbxassetid://4483345998",
+    Name = "Stats",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local E = Window:MakeTab({
-    Name = "🔎 ESP",
-    Icon = "rbxassetid://4483345998",
+    Name = "ESP",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local RA = Window:MakeTab({
-    Name = "🎆 Raid",
-    Icon = "rbxassetid://4483345998",
+    Name = "Raid",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local LC = Window:MakeTab({
-    Name = "🙆‍♂️ Local Players",
-    Icon = "rbxassetid://4483345998",
+    Name = "Local Players",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local Wld = Window:MakeTab({
-    Name = "🌍 World Teleport",
-    Icon = "rbxassetid://4483345998",
+    Name = "World Teleport",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local SV = Window:MakeTab({
-    Name = "📈 Status Sever",
-    Icon = "rbxassetid://4483345998",
+    Name = "Status Sever",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
-    Name = "🍍 Devil Fruit",
-    Icon = "rbxassetid://4483345998",
+    Name = "Devil Fruit",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local R = Window:MakeTab({
-    Name = "☣️ Race V4",
-    Icon = "rbxassetid://4483345998",
+    Name = "Race V4",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local SH = Window:MakeTab({
-    Name = "🛒 Shop",
-    Icon = "rbxassetid://4483345998",
+    Name = "Shop",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
-    Name = "🔰 Misc",
-    Icon = "rbxassetid://4483345998",
+    Name = "Misc",
+    Icon = "rbxassetid://119980140458596",
     PremiumOnly = false
 })
 
 -----Label--------------------
 local Section = W:AddSection({
-    Name = "Credit"
-})
-
-
-W:AddLabel("Script By LMNGAMING")
-
-local Section = W:AddSection({
     Name = "Update"
 })
 
-W:AddLabel("[+] Sla Hub is back!")
-W:AddLabel("[+] I Not Skidder!")
-W:AddLabel("[+] I Will overcome Hirimii,MTriet Hub!!!")
-W:AddLabel("[+] Load Script Faster!")
+W:AddLabel("[+] Sla Hub is HERE!")
+W:AddLabel("[+] Best AutoFarm!")
+W:AddLabel("[+] Up and Growing")
+W:AddLabel("[+] Smooth")
 
 local Section = W:AddSection({
     Name = "Status"
@@ -2692,7 +2662,6 @@ local locallv = W:AddLabel("Level")
             end)
         end
     end)
-    
     local localfrag = W:AddLabel("Fragment")
     
     spawn(function()
@@ -2752,7 +2721,7 @@ local locallv = W:AddLabel("Level")
         Name = "Status Hack"
     })
     
-    local LevelFarmFarm W:AddLabel("Kaitun : Đell có(sắp có)")
+    local LevelFarmFarm W:AddLabel("Kaitun: Coming Soon")
     W:AddLabel("Config Save : Comming Son...")
     local Farmfast = W:AddLabel("Farm Fast : ❌")
     local Bypass = W:AddLabel("Bypass ❌")
@@ -8370,13 +8339,13 @@ pcall(function()
                 OrionLib:MakeNotification({
                     Name = "Sla Hub(Noitification)",
                     Content = "[EN] : Please cancel the farrm level quest (if any)",
-                    Image = "rbxassetid://4483345998",
+                    Image = "rbxassetid://119980140458596",
                     Time = 9
                 })
                 OrionLib:MakeNotification({
                     Name = "Sla Hub(Noitification)",
                     Content = "[VN] : Làm ơn hủy nhiệm vụ farrm level(nếu có)",
-                    Image = "rbxassetid://4483345998",
+                    Image = "rbxassetid://119980140458596",
                     Time = 9
                 })
             end
@@ -8694,7 +8663,7 @@ spawn(function()
             OrionLib:MakeNotification({
                 Name = "Sla Hub",
                 Content = "You not have beli or fragment!",
-                Image = "rbxassetid://4483345998",
+                Image = "rbxassetid://119980140458596",
                 Time = 5
             })
             end
@@ -11316,7 +11285,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Sla Hub",
                     Content = "Turn Off Hop Find Moon Please",
-                    Image = "rbxassetid://4483345998",
+                    Image = "rbxassetid://119980140458596",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
@@ -11324,7 +11293,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Sla Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://4483345998",
+                    Image = "rbxassetid://119980140458596",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
@@ -11332,7 +11301,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Sla Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://4483345998",
+                    Image = "rbxassetid://119980140458596",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
@@ -11340,7 +11309,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Sla Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://4483345998",
+                    Image = "rbxassetid://119980140458596",
                     Time = 5
                 })
             else
@@ -11353,7 +11322,7 @@ spawn(function()
 OrionLib:MakeNotification({
         Name = "Sla Hub",
         Content = "Loading script complete!, You can now enable the function!",
-        Image = "rbxassetid://4483345998",
+        Image = "rbxassetid://119980140458596",
         Time = 5
     })
 
@@ -11396,6 +11365,6 @@ OrionLib:Init()
 OrionLib:MakeNotification({
     Name = "Sla Hub",
     Content = "Loading Config Complete!!",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://119980140458596",
     Time = 5
 })
